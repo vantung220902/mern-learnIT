@@ -1,4 +1,4 @@
-export const apiUrl = process.env.NODE_END !== 'production' ? 'http://localhost:5000/api' : ''
+export const apiUrl = process.env.NODE_END !== 'production' ? 'http://localhost:5000/api' : ' https://quiet-harbor-78031.herokuapp.com/api'
 export const LOCAL_STORAGE_TOKEN_NAME = 'learnit-mern'
 export const POST_LOADED_SUCCESS = 'POST_LOADED_SUCCESS'
 export const POST_LOADED_FAILED = 'POST_LOADED_FAILED'
