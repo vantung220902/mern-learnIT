@@ -1,0 +1,47 @@
+POST  http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username":"tungCoder",
+    "password":"tungCoder"
+}
+
+###
+POST  http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username":"tungCoder",
+    "password":"tungCoder"
+}
+
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjJiNGQ3OTc4OTgwZjZjMDUzMDYyZjciLCJpYXQiOjE2NDcwMDc4MjF9.fN2lF_JEP3dTK4OLFenYqkLwKgswITl6K7OYabDvJTQ
+
+{
+    "title":"Node JS",
+    "description":"Node js",
+    "url":"nodejs.com"
+}
+###
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjJiNGQ3OTc4OTgwZjZjMDUzMDYyZjciLCJpYXQiOjE2NDcwMDg1NDh9.fvpyOgjCNlwo0ZjTNPiq-HOOvSOigulTDbYziYHUU_s
+
+###
+PUT http://localhost:5000/api/posts/622b5c32326341adbd1fc6ef
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjJiNGQ3OTc4OTgwZjZjMDUzMDYyZjciLCJpYXQiOjE2NDcwMDg1NDh9.fvpyOgjCNlwo0ZjTNPiq-HOOvSOigulTDbYziYHUU_s
+
+{
+   "title": "Vue js",
+    "description": "Vueeee",
+    "url": "https://vue.com",
+    "status": "LEARNING"
+}
+###
+DELETE  http://localhost:5000/api/posts/622b5c41326341adbd1fc6f1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjJiNGQ3OTc4OTgwZjZjMDUzMDYyZjciLCJpYXQiOjE2NDcwMDg1NDh9.fvpyOgjCNlwo0ZjTNPiq-HOOvSOigulTDbYziYHUU_s
+
